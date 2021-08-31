@@ -108,6 +108,9 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+	.paragraph_side {
+		display: flex;
+	}
 
 /* Type */
 
@@ -298,6 +301,15 @@ input, select, textarea {
 
 	.align-right {
 		text-align: right;
+	}
+
+	.title_paragraph_side {
+		grid-row: 1;
+		grid-column: 1;
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 /* Form */
@@ -704,6 +716,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
+
 		@media screen and (max-width: 736px) {
 
 			.image.main {
@@ -718,6 +731,16 @@ input, select, textarea {
 				margin: 1.5rem 0;
 			}
 
+		}
+		.image.main.tall {
+			grid-row: 1;
+			grid-column: 2;
+			display: flex;
+			align-items: center;
+		}
+		.image.main.wall {
+			width: 50%;
+			display: flex;
 		}
 
 /* List */
@@ -1159,7 +1182,7 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 			background-image: url("../../images/bg.jpg");
-			background-image: url("../../images/jackie_carnival_wide.jpg");
+			background-image: url("../../images/jackie_pink_white.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1600,6 +1623,16 @@ input, select, textarea {
 
 				#main article .close:active:before {
 					background-color: rgba(255, 255, 255, 0.175);
+				}
+
+				.work {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					grid-template-rows: 1fr 1fr;
+				}
+				.project_list {
+					grid-row: 2;
+					grid-column: 1/4;
 				}
 
 		@media screen and (max-width: 736px) {
